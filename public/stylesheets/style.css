@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  padding-left: 15px;
+  font: 12px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+b, .bold			{ font-weight: bold; }
+.clr				{ clear: both; }
+.fleft				{ float: left; }
+.flight				{ float: right; }
+.w400				{ width: 400px; }
+
+#messages-wrap
+{
+	position: relative;
+	height: 450px;
+}
+#messages-wrap,
+#users				{ border: 1px solid #666; background-color: #eee; }
+#users				{ border-left: none; }
+#users > *			{ padding-left: 10px; }
+.user				{ padding-top: 5px; padding-bottom: 5px; }
+.user.self			{ background-color: #A1B9BB; }
+.user.status-typing,
+.user.status-active	{ background-color: #CDDAA1; font-weight: bold; }
+.user.status-idle	{ background-color: #F8CA00; }
+.user.status.dead	{ background-color: #E7393C; }
+#messages-wrap h3
+{
+	position: absolute;
+	top: 0px;
+	left: 10px;
+	width: 390px;
+	height: auto;
+	z-index: 2;
+}
+#messages
+{
+	position: absolute;
+	bottom: 0px;
+	height: auto;
+	width: 390px;
+	z-index: 1;
+	left: 10px;
+}
+
+.message + .message		{ padding-top: 15px; }
+.message.self			{ background-color: #ddd; }
+
